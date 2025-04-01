@@ -10,9 +10,9 @@ const morgan = require('morgan');
 const {Product} = require('./model/Product');
 const {Cart} = require('./model/Cart');
 
+  let MONGODB_URL='mongodb+srv://vaishalipawar539:46qcQsZN9ztsbdC3@cluster0.4q966uu.mongodb.net/?retryWrites=true&w=majority'
 
-
-mongoose.connect('mongodb://127.0.0.1:27017/commerece12')
+mongoose.connect(MONGODB_URL)
 .then(()=>{
     console.log('db connected');
 }).catch((err)=>{
